@@ -9,6 +9,7 @@
     "BlockEntityWithoutLevelRendererMixin"
   ],
   "client": [
+    "ShatteredModelMixin"
   ],
   "injectors": {
     "defaultRequire": 1
