@@ -1,6 +1,0 @@
-{
-    "variants": {
-        "lit=false": { "model": "cyclic:block/generator_item" },
-        "lit=true": { "model": "cyclic:block/generator_item_lit" }
-    }
-}

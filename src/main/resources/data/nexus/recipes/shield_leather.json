@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "OOO",
+    "OSO",
+    " O "
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:shield"
+    },
+    "O": {
+      "item": "minecraft:leather"
+    }
+  },
+  "result": {
+    "item": "nexus:shield_leather"
+  }
+}

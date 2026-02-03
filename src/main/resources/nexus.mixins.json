@@ -1,0 +1,17 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "org.lightning323.nexus.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "nexus.refmap.json",
+  "mixins": [
+    "OptionInstanceMixin",
+    "BlockEntityWithoutLevelRendererMixin"
+  ],
+  "client": [
+    "deeperdarker.ShatteredModelMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

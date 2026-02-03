@@ -1,6 +1,0 @@
-{
-    "variants": {
-        "lit=true": { "model": "cyclic:block/teleport" },
-        "lit=false": { "model": "cyclic:block/teleport" }
-    }
-}

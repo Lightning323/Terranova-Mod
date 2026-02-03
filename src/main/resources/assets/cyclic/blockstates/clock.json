@@ -1,6 +1,0 @@
-{
-    "variants": {
-        "lit=false": { "model": "cyclic:block/clock" },
-        "lit=true": { "model": "cyclic:block/clock_on" }
-    }
-}

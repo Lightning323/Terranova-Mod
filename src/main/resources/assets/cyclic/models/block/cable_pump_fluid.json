@@ -1,9 +1,0 @@
-{
-    "__comment": "Copyright © InsomniaKitten 2017",
-	"parent":"cyclic:parent/cable_pump",
-    "textures": {
-		"1": "cyclic:block/cable/cable_extractor_base",
-        "particle": "cyclic:block/cable/cable_fluid",
-        "texture": "cyclic:block/cable/cable_fluid"
-    } 
-}

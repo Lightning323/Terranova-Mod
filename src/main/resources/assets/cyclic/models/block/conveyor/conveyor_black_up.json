@@ -1,6 +1,0 @@
-{
-  "parent": "cyclic:parent/conveyor_up",
-  "textures": {
-    "texture": "cyclic:block/conveyor/conveyor_black_straight"
-  }
-}

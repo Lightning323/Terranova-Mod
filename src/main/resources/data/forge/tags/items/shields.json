@@ -3,15 +3,15 @@
   "values": [
     "minecraft:shield",
     {
-      "id": "cyclic:shield_obsidian",
+      "id": "nexus:shield_obsidian",
       "required": false
     },
     {
-      "id": "cyclic:shield_bone",
+      "id": "nexus:shield_bone",
       "required": false
     },
     {
-      "id": "cyclic:shield_leather",
+      "id": "nexus:shield_leather",
       "required": false
     }
   ]

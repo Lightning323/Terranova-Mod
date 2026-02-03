@@ -1,12 +1,12 @@
 {
   "values": [
-    "cyclic:emerald_helmet",
-    "cyclic:emerald_chestplate",
-    "cyclic:emerald_leggings",
-    "cyclic:emerald_boots",
-    "cyclic:copper_helmet",
-    "cyclic:copper_chestplate",
-    "cyclic:copper_leggings",
-    "cyclic:copper_boots"
+    "nexus:emerald_helmet",
+    "nexus:emerald_chestplate",
+    "nexus:emerald_leggings",
+    "nexus:emerald_boots",
+    "nexus:copper_helmet",
+    "nexus:copper_chestplate",
+    "nexus:copper_leggings",
+    "nexus:copper_boots"
   ]
 }

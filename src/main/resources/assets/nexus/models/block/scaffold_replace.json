@@ -1,0 +1,8 @@
+{
+	"parent": "nexus:parent/scaffold",
+
+	"textures": {
+		"all": "nexus:block/scaffold_replace",
+		"particle": "nexus:block/scaffold_replace"
+	}
+}
