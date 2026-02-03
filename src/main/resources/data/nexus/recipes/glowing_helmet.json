@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " i ",
+    "iOi",
+    "O O"
+  ],
+  "key": {
+    "i": {
+      "item": "minecraft:gold_ingot"
+    },
+    "O": {
+      "item": "minecraft:glowstone"
+    }
+  },
+  "result": {
+    "item": "nexus:glowing_helmet",
+    "count": 1
+  }
+}

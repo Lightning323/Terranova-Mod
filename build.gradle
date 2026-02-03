@@ -151,10 +151,14 @@ dependencies {
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}")
-    runtimeOnly fg.deobf("curse.maven:jei-238222:6075247")
     implementation fg.deobf("maven.modrinth:deeperdarker:e2oirgc2")
     runtimeOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}")
     compileOnly fg.deobf("top.theillusivec4.curios:curios-forge:${curios_version}:api")
+
+    //For testing
+    runtimeOnly fg.deobf("curse.maven:jei-238222:6075247")
+    runtimeOnly fg.deobf("curse.maven:controlling-250398:4646682")
+    runtimeOnly fg.deobf("curse.maven:searchables-858542:5284015")
 
 
 
