@@ -47,7 +47,7 @@ public class ClientModEvents {
 
         if(preInit.client_allowNightVisionSurvival == false) {
             var mc = Minecraft.getInstance();
-            if (mc.player == null) return;
+            if (mc.player == null || mc.gameMode == null || mc.level == null) return;
             GameType gameMode = mc.gameMode.getPlayerMode();
             isRestricted = gameMode == GameType.SURVIVAL || gameMode == GameType.ADVENTURE;
         }
