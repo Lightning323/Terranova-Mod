@@ -21,7 +21,6 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
-import org.lightning323.nexus.utils.EntityUtil;
 
 public class BlockScaffolding extends Block {
 
@@ -54,6 +53,16 @@ public class BlockScaffolding extends Block {
         super.neighborChanged(state, worldIn, pos, blockIn, fromPos, isMoving);
         if (blockIn == this) {
             worldIn.destroyBlock(pos, true);
+        }
+    }
+
+
+    public static void tryMakeEntityClimb(Level worldIn, LivingEntity entity, double climbSpeed) {
+        if (entity.isCrouching()) {
+            entity.setDeltaMovement(entity.getDeltaMovement().x, 0.0, entity.getDeltaMovement().z);
+        } else if (entity.zza > 0.0F && entity.getDeltaMovement().y < climbSpeed) {
+            entity.setDeltaMovement(entity.getDeltaMovement().x, climbSpeed, entity.getDeltaMovement().z);
+            entity.fallDistance = 0.0F;
         }
     }
 
@@ -99,6 +108,6 @@ public class BlockScaffolding extends Block {
         if (!entityIn.horizontalCollision) {
             return;
         }
-        EntityUtil.tryMakeEntityClimb(worldIn, entity, CLIMB_SPEED);
+        tryMakeEntityClimb(worldIn, entity, CLIMB_SPEED);
     }
 }

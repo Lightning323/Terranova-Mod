@@ -14,7 +14,6 @@ import org.lightning323.nexus.effects.EffectRegistry;
 import org.lightning323.nexus.enchantments.EnchantmentRegistry;
 import org.lightning323.nexus.events.EventRegistry;
 import org.lightning323.nexus.network.NetworkHandler;
-import org.lightning323.nexus.sound.SoundRegistry;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(Nexus.MOD_ID)
@@ -25,14 +24,12 @@ public class Nexus {
 
     public Nexus() {
         FMLJavaModLoadingContext.get().getModEventBus().addListener(EventRegistry::setup);
-        FMLJavaModLoadingContext.get().getModEventBus().addListener(EventRegistry::setupClient);
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ItemRegistry.register(modEventBus);
         BlockRegistry.register(modEventBus);
         EnchantmentRegistry.register(modEventBus);
         EffectRegistry.register(modEventBus);
-        SoundRegistry.register(modEventBus);
         PotionsRegistry.register(modEventBus);
 
 

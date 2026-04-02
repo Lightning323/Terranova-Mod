@@ -1,6 +1,6 @@
 {
     "parent": "item/generated",
     "textures": {
-        "layer0": "nexus:item/gear/emerald_leggings"
+        "layer0": "nexus:item/gem_amethyst"
     }
 }

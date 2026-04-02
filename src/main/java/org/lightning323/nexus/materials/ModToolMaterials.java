@@ -14,61 +14,61 @@ import java.util.List;
 import static org.lightning323.nexus.Nexus.MOD_ID;
 
 public class ModToolMaterials {
-
-    //Comes after stone
-    //Copper tools have iron speed but stone durability
-    public static final Tier COPPER = TierSortingRegistry.registerTier(
-            //harvestLevel, uses, toolSpeed, damage, enchantability
-            //Tiers.STONE
-            new ForgeTier(
-                    1,
-                    200,
-                    Tiers.IRON.getSpeed(),
-                    1.0F,
-                    8,
-                    BlockTags.create(new ResourceLocation(MOD_ID, "needs_copper_tool")),
-                    () -> Ingredient.of(Items.COPPER_INGOT)),
-            new ResourceLocation(MOD_ID, "copper"),
-            List.of(Tiers.STONE), //after
-            List.of(Tiers.IRON)); //before
-
-    public static final Tier AMETHYST = TierSortingRegistry.registerTier(
-            //harvestLevel, uses, toolSpeed, damage, enchantability
-            //Tiers.IRON
-            new ForgeTier(
-                    2,
-                    //iron is 250
-                    1000,
-                    //iron is 6
-                    Tiers.IRON.getSpeed(),
-                    Tiers.STONE.getAttackDamageBonus(),
-                    26,
-                    BlockTags.create(new ResourceLocation(MOD_ID, "needs_amethyst_tool")),
-                    () -> Ingredient.of(Items.AMETHYST_SHARD)),
-            new ResourceLocation(MOD_ID, "amethyst"),
-            List.of(Tiers.IRON),  //after
-            List.of(Tiers.DIAMOND)); //before
-
-
-    //Emerald tools have gold speed (fast) and almost diamond durability
-    public static final Tier EMERALD = TierSortingRegistry.registerTier(
-            //harvestLevel, uses, toolSpeed, damage, enchantability
-//            Tiers.GOLD
-            new ForgeTier(
-                    0,
-                    //uses = 1561
-                    (int) (Tiers.DIAMOND.getUses() * 0.75f),
-                    //diamond is 8
-                    12.0F,
-                    0.0F,
-                    15,
-
-                    BlockTags.create(new ResourceLocation(MOD_ID, "needs_emerald_tool")),
-                    () -> Ingredient.of(Items.EMERALD)),//Repair
-            new ResourceLocation(MOD_ID, "emerald"),
-            List.of(Tiers.GOLD), //after
-            List.of(Tiers.DIAMOND) //before
-    );
+//
+//    //Comes after stone
+//    //Copper tools have iron speed but stone durability
+//    public static final Tier COPPER = TierSortingRegistry.registerTier(
+//            //harvestLevel, uses, toolSpeed, damage, enchantability
+//            //Tiers.STONE
+//            new ForgeTier(
+//                    1,
+//                    200,
+//                    Tiers.IRON.getSpeed(),
+//                    1.0F,
+//                    8,
+//                    BlockTags.create(new ResourceLocation(MOD_ID, "needs_copper_tool")),
+//                    () -> Ingredient.of(Items.COPPER_INGOT)),
+//            new ResourceLocation(MOD_ID, "copper"),
+//            List.of(Tiers.STONE), //after
+//            List.of(Tiers.IRON)); //before
+//
+//    public static final Tier AMETHYST = TierSortingRegistry.registerTier(
+//            //harvestLevel, uses, toolSpeed, damage, enchantability
+//            //Tiers.IRON
+//            new ForgeTier(
+//                    2,
+//                    //iron is 250
+//                    1000,
+//                    //iron is 6
+//                    Tiers.IRON.getSpeed(),
+//                    Tiers.STONE.getAttackDamageBonus(),
+//                    26,
+//                    BlockTags.create(new ResourceLocation(MOD_ID, "needs_amethyst_tool")),
+//                    () -> Ingredient.of(Items.AMETHYST_SHARD)),
+//            new ResourceLocation(MOD_ID, "amethyst"),
+//            List.of(Tiers.IRON),  //after
+//            List.of(Tiers.DIAMOND)); //before
+//
+//
+//    //Emerald tools have gold speed (fast) and almost diamond durability
+//    public static final Tier EMERALD = TierSortingRegistry.registerTier(
+//            //harvestLevel, uses, toolSpeed, damage, enchantability
+////            Tiers.GOLD
+//            new ForgeTier(
+//                    0,
+//                    //uses = 1561
+//                    (int) (Tiers.DIAMOND.getUses() * 0.75f),
+//                    //diamond is 8
+//                    12.0F,
+//                    0.0F,
+//                    15,
+//
+//                    BlockTags.create(new ResourceLocation(MOD_ID, "needs_emerald_tool")),
+//                    () -> Ingredient.of(Items.EMERALD)),//Repair
+//            new ResourceLocation(MOD_ID, "emerald"),
+//            List.of(Tiers.GOLD), //after
+//            List.of(Tiers.DIAMOND) //before
+//    );
 
     //Creative tier
     public static final Tier CREATIVE = TierSortingRegistry.registerTier(

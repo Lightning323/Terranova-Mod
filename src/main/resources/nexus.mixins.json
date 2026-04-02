@@ -5,8 +5,7 @@
   "compatibilityLevel": "JAVA_8",
   "refmap": "nexus.refmap.json",
   "mixins": [
-    "OptionInstanceMixin",
-    "BlockEntityWithoutLevelRendererMixin"
+    "OptionInstanceMixin"
   ],
   "client": [
     "deeperdarker.ShatteredModelMixin"

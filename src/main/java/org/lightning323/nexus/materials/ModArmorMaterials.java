@@ -7,7 +7,6 @@ import net.minecraft.world.item.ArmorMaterial;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import org.lightning323.nexus.Nexus;
-import org.lightning323.nexus.sound.SoundRegistry;
 
 import java.util.function.Supplier;
 
@@ -24,32 +23,32 @@ public enum ModArmorMaterials implements ArmorMaterial {
             SoundEvents.ARMOR_EQUIP_GENERIC, // equip sound
             0.10F, // toughness
             0F, // knockback resistance
-            () -> Ingredient.of(Items.GLOWSTONE_DUST)),
+            () -> Ingredient.of(Items.GLOWSTONE_DUST));
 
-    //Copper has iron protection but leather durability
-    COPPER_ARMOR("copper", 6, // durability (5 = leather; 15= armor)
-            new int[]{ArmorMaterials.IRON.getDefenseForType(ArmorItem.Type.HELMET),// helmet
-                    5,// chestplate
-                    ArmorMaterials.IRON.getDefenseForType(ArmorItem.Type.LEGGINGS),// leggings
-                    ArmorMaterials.IRON.getDefenseForType(ArmorItem.Type.BOOTS), // boots
-            }, 12, // enchantability
-            SoundEvents.ARMOR_EQUIP_GENERIC, // equip sound
-            0F, // toughness
-            0F, // knockback resistance
-            () -> Ingredient.of(Items.COPPER_INGOT)), // repair material
-
-    //Emerald has iron protection but with a diamond durability, netherite toughness and higher enchantment value than any other armor
-    EMERALD_ARMOR("emerald", 33, // durability (33= diamond; 37 = netherite)
-            new int[]{ // protection
-                    ArmorMaterials.IRON.getDefenseForType(ArmorItem.Type.HELMET),// helmet
-                    ArmorMaterials.IRON.getDefenseForType(ArmorItem.Type.CHESTPLATE) + 1,// chestplate
-                    ArmorMaterials.IRON.getDefenseForType(ArmorItem.Type.LEGGINGS),// leggings
-                    ArmorMaterials.IRON.getDefenseForType(ArmorItem.Type.BOOTS), // boots
-            }, 35, // enchantability
-            SoundRegistry.EQUIP_EMERALD.get(), // equip sound
-            0.25F, // toughness
-            0.2F, // knockback resistance
-            () -> Ingredient.of(Items.EMERALD_BLOCK)); // repair material
+//    //Copper has iron protection but leather durability
+//    COPPER_ARMOR("copper", 6, // durability (5 = leather; 15= armor)
+//            new int[]{ArmorMaterials.IRON.getDefenseForType(ArmorItem.Type.HELMET),// helmet
+//                    5,// chestplate
+//                    ArmorMaterials.IRON.getDefenseForType(ArmorItem.Type.LEGGINGS),// leggings
+//                    ArmorMaterials.IRON.getDefenseForType(ArmorItem.Type.BOOTS), // boots
+//            }, 12, // enchantability
+//            SoundEvents.ARMOR_EQUIP_GENERIC, // equip sound
+//            0F, // toughness
+//            0F, // knockback resistance
+//            () -> Ingredient.of(Items.COPPER_INGOT)), // repair material
+//
+//    //Emerald has iron protection but with a diamond durability, netherite toughness and higher enchantment value than any other armor
+//    EMERALD_ARMOR("emerald", 33, // durability (33= diamond; 37 = netherite)
+//            new int[]{ // protection
+//                    ArmorMaterials.IRON.getDefenseForType(ArmorItem.Type.HELMET),// helmet
+//                    ArmorMaterials.IRON.getDefenseForType(ArmorItem.Type.CHESTPLATE) + 1,// chestplate
+//                    ArmorMaterials.IRON.getDefenseForType(ArmorItem.Type.LEGGINGS),// leggings
+//                    ArmorMaterials.IRON.getDefenseForType(ArmorItem.Type.BOOTS), // boots
+//            }, 35, // enchantability
+//            SoundRegistry.EQUIP_EMERALD.get(), // equip sound
+//            0.25F, // toughness
+//            0.2F, // knockback resistance
+//            () -> Ingredient.of(Items.EMERALD_BLOCK)); // repair material
 
     private final String name;
     private final int durabilityMultiplier;

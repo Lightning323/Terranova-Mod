@@ -1,27 +1,10 @@
  [
    {
      "tag": "nexus:scaffold_fragile",
-     "mass": 0.0,
-     "priority": 101
+     "mass": 10.0
    },
    {
      "tag": "nexus:scaffold_responsive",
-     "mass": 0.0,
-     "priority": 101
-   },
-   {
-     "block": "nexus:spikes_iron",
-     "mass": 10.0,
-     "priority": 101
-   },
-   {
-     "block": "nexus:spikes_fire",
-     "mass": 10.0,
-     "priority": 101
-   },
-   {
-     "block": "nexus:spikes_curse",
-     "mass": 10.0,
-     "priority": 101
+     "mass": 10.0
    }
  ]

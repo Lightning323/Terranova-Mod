@@ -46,11 +46,6 @@ public class PreInitConfig {
     public boolean reachDistance = true;
     public double reachDistance_reach = 1.5f;
 
-    public double leatherShieldDurabilityMultiplier = 1.5F;
-    public double boneShieldDurabilityMultiplier = 2F;
-    public double obsidianShieldDurabilityMultiplier = 5F;
-    public double netheriteDurabilityMultiplier = 20F;
-
     /**
      * Write a new config
      */
@@ -67,10 +62,6 @@ public class PreInitConfig {
         config.set("common.reachDistance.reach_distance_potion_enabled", reachDistance);
         config.set("common.reachDistance.reach_distance_multiplier", reachDistance_reach);
 
-        config.set("common.shield.leather_durability_multiplier", leatherShieldDurabilityMultiplier);
-        config.set("common.shield.bone_durability_multiplier", boneShieldDurabilityMultiplier);
-        config.set("common.shield.obsidian_durability_multiplier", obsidianShieldDurabilityMultiplier);
-        config.set("common.shield.netherite_durability_multiplier", netheriteDurabilityMultiplier);
         config.save();
     }
 
@@ -91,9 +82,5 @@ public class PreInitConfig {
         reachDistance = config.getOrElse("common.reachDistance.reach_distance_potion_enabled", reachDistance);
         reachDistance_reach = config.getOrElse("common.reachDistance.reach_distance_multiplier", reachDistance_reach);
 
-        leatherShieldDurabilityMultiplier = config.getOrElse("common.shield.leather_durability_multiplier", leatherShieldDurabilityMultiplier);
-        boneShieldDurabilityMultiplier = config.getOrElse("common.shield.bone_durability_multiplier", boneShieldDurabilityMultiplier);
-        obsidianShieldDurabilityMultiplier = config.getOrElse("common.shield.obsidian_durability_multiplier", obsidianShieldDurabilityMultiplier);
-        netheriteDurabilityMultiplier = config.getOrElse("common.shield.netherite_durability_multiplier", netheriteDurabilityMultiplier);
     }
 }
