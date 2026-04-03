@@ -17,13 +17,13 @@ public class ItemRegistry {
             = DeferredRegister.create(ForgeRegistries.ITEMS, Nexus.MOD_ID);
 
     //Misc
-    public static final RegistryObject<Item> SNOWFLAKE = ITEMS.register("snowflake", () -> new Item(new Item.Properties()));
-//    public static final RegistryObject<Item> BLUE_SNOWFLAKE = ITEMS.register("blue_snowflake", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GOLD_SNOWFLAKE = ITEMS.register("gold_snowflake", () -> new Item(new Item.Properties()));
-
-    public static final RegistryObject<Item> GEM_PRISMARINE = ITEMS.register("gem_prismarine", () -> new Item(new Item.Properties()));
-    public static final RegistryObject<Item> GEM_AMETHYST = ITEMS.register("gem_amethyst", () -> new Item(new Item.Properties()));
-//    public static final RegistryObject<Item> GEM_TANZANITE = ITEMS.register("gem_tanzanite", () -> new Item(new Item.Properties()));
+//    public static final RegistryObject<Item> SNOWFLAKE = ITEMS.register("snowflake", () -> new Item(new Item.Properties()));
+////    public static final RegistryObject<Item> BLUE_SNOWFLAKE = ITEMS.register("blue_snowflake", () -> new Item(new Item.Properties()));
+//    public static final RegistryObject<Item> GOLD_SNOWFLAKE = ITEMS.register("gold_snowflake", () -> new Item(new Item.Properties()));
+//
+//    public static final RegistryObject<Item> GEM_PRISMARINE = ITEMS.register("gem_prismarine", () -> new Item(new Item.Properties()));
+//    public static final RegistryObject<Item> GEM_AMETHYST = ITEMS.register("gem_amethyst", () -> new Item(new Item.Properties()));
+////    public static final RegistryObject<Item> GEM_TANZANITE = ITEMS.register("gem_tanzanite", () -> new Item(new Item.Properties()));
 
 
     //Scaffolding
@@ -63,11 +63,6 @@ public class ItemRegistry {
         } else if (event.getTabKey() == CreativeModeTabs.OP_BLOCKS) {
             event.accept(ItemRegistry.CREATIVE_SWORD);
         } else if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(ItemRegistry.SNOWFLAKE);
-//            event.accept(ItemRegistry.BLUE_SNOWFLAKE);
-            event.accept(ItemRegistry.GOLD_SNOWFLAKE);
-            event.accept(ItemRegistry.GEM_PRISMARINE);
-            event.accept(ItemRegistry.GEM_AMETHYST);
         }
     }
 }
