@@ -9,9 +9,9 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.lightning323.nexus.potions.PotionsRegistry;
 import org.slf4j.Logger;
 import org.lightning323.nexus.effects.EffectRegistry;
-import org.lightning323.nexus.enchantments.EnchantmentRegistry;
 import org.lightning323.nexus.events.EventRegistry;
 import org.lightning323.nexus.network.NetworkHandler;
 
@@ -28,7 +28,6 @@ public class Nexus {
 
         ItemRegistry.register(modEventBus);
         BlockRegistry.register(modEventBus);
-        EnchantmentRegistry.register(modEventBus);
         EffectRegistry.register(modEventBus);
         PotionsRegistry.register(modEventBus);
 
