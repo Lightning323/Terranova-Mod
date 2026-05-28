@@ -1,9 +1,0 @@
-{
-  "type": "minecraft:blasting",
-  "ingredient": {
-    "item": "nexus:scaffold_fragile"
-  },
-  "result": "nexus:scaffold_responsive",
-  "experience": 0.0,
-  "cookingtime": 50
-}

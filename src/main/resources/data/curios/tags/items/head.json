@@ -1,9 +1,0 @@
-{
-  "replace": "false",
-  "values": [
-    {
-      "id": "nexus:glowing_helmet",
-      "required": false
-    }
-  ]
-}

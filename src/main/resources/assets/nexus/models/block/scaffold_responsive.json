@@ -1,7 +1,0 @@
-{
-	"parent": "nexus:parent/scaffold",
-	"textures": {
-		"all": "nexus:block/scaffold_responsive",
-		"particle": "nexus:block/scaffold_responsive"
-	}
-}

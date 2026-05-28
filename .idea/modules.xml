@@ -3,8 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Cyclic-Nexus.iml" filepath="$PROJECT_DIR$/.idea/Cyclic-Nexus.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cyclicNexus.main.iml" filepath="$PROJECT_DIR$/.idea/modules/cyclicNexus.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/cyclicNexus.test.iml" filepath="$PROJECT_DIR$/.idea/modules/cyclicNexus.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Terranova-Mod.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Terranova-Mod.main.iml" />
     </modules>
   </component>
 </project>

@@ -1,8 +1,0 @@
-{
-	"parent": "nexus:parent/scaffold",
-
-	"textures": {
-		"all": "nexus:block/scaffold_fragile",
-		"particle": "nexus:block/scaffold_fragile"
-	}
-}
