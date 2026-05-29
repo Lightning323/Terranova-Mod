@@ -1,5 +1,39 @@
 {
-  "itemGroup.terranova": "Example Mod Tab",
-  "block.terranova.example_block": "Example Block",
-  "item.terranova.example_item": "Example Item"
+  "itemGroup.terranova": "TerraNova Mod",
+
+  "item.terranova.worldedit_wand": "WorldEdit Wand",
+  "item.terranova.worldedit_nav": "WorldEdit Navigation Tool",
+
+  "item.terranova.compressed_sand_bar": "Compressed Sand Bar",
+  "item.terranova.heat_tile": "Heat Resistant Sheet",
+  "item.terranova.sand_tile": "Sand Tile",
+  "item.terranova.pyrotide_shard": "Pyrotide Shard",
+  "item.terranova.hydronite_shard": "Hydronyde Shard",
+
+  "item.terranova.steel_string": "Steel String",
+
+  "item.terranova.witherite_powder": "Witherite Dust",
+  "item.terranova.black_netherite_ingot": "Black Netherite Ingot",
+  "item.terranova.abyssal_dust": "Abyssal Dust",
+  "item.terranova.abyssal_ingot": "Abyssal Ingot",
+  "item.terranova.abyssal_pearl": "Abyssal Pearl",
+  "item.terranova.cursium_dust": "Cursium Dust",
+  "item.terranova.cursium_pearl": "Cursium Pearl",
+  "item.terranova.monstrous_dust": "Monstrous Dust",
+  "item.terranova.monstrous_pearl": "Monstrous Pearl",
+  "item.terranova.monstrous_ingot": "Monstrous Ingot",
+  "item.terranova.ancient_dust": "Ancient Dust",
+  "item.terranova.ancient_pearl": "Ancient Pearl",
+  "item.terranova.void_core_dust": "Void Core Dust",
+  "item.terranova.void_ingot": "Void Ingot",
+  "item.terranova.void_pearl": "Void Pearl",
+  "item.terranova.ignitium_powder": "Ignitium Dust",
+  "item.terranova.ignitium_ingot": "Crystalized Ignitium Ingot",
+  "item.terranova.ignitium_pearl": "Ignitium Pearl",
+  "item.terranova.coral_pearl": "Coral Pearl",
+  "item.terranova.fire_pearl": "Fire Pearl",
+
+  "item.terranova.precision_component": "Precision Component",
+  "item.terranova.precision_machine": "Precision Machine",
+  "item.terranova.warp_core": "Warp Core"
 }
