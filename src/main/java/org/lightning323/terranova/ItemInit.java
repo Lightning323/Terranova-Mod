@@ -34,7 +34,7 @@ public class ItemInit {
     // ========================================================================
     // OTHER
     // ========================================================================
-    public static final DeferredItem<Item> STEEL_STRING = ITEMS.register("steel_string", () -> new Item(normal(64)));
+//    public static final DeferredItem<Item> STEEL_STRING = ITEMS.register("steel_string", () -> new Item(normal(64)));
 
     // ========================================================================
     // CATACLYSM ITEMS
@@ -55,7 +55,7 @@ public class ItemInit {
     // Monstrous (Nether golem)
     public static final DeferredItem<Item> MONSTROUS_DUST = ITEMS.register("monstrous_dust", () -> new Item(fireproof(64)));
     public static final DeferredItem<Item> MONSTROUS_PEARL = ITEMS.register("monstrous_pearl", () -> new Item(fireproof(64)));
-    public static final DeferredItem<Item> MONSTROUS_INGOT = ITEMS.register("monstrous_ingot", () -> new Item(fireproof(64)));
+//    public static final DeferredItem<Item> MONSTROUS_INGOT = ITEMS.register("monstrous_ingot", () -> new Item(fireproof(64)));
 
     // Ancient Remnant
     public static final DeferredItem<Item> ANCIENT_DUST = ITEMS.register("ancient_dust", () -> new Item(fireproof(64)));
