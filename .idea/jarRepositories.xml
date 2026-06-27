@@ -61,5 +61,65 @@
       <option name="name" value="MavenLocal" />
       <option name="url" value="file:$MAVEN_REPOSITORY$/" />
     </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven2" />
+      <option name="name" value="maven2" />
+      <option name="url" value="https://modmaven.dev/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="create maven" />
+      <option name="name" value="create maven" />
+      <option name="url" value="https://maven.tterrag.com/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven3" />
+      <option name="name" value="maven3" />
+      <option name="url" value="https://mvn.devos.one/snapshots" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="CreateMaven" />
+      <option name="name" value="CreateMaven" />
+      <option name="url" value="https://maven.createmod.net" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="RyanHCode Maven" />
+      <option name="name" value="RyanHCode Maven" />
+      <option name="url" value="https://maven.ryanhcode.dev/releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Jared's maven" />
+      <option name="name" value="Jared's maven" />
+      <option name="url" value="https://maven.blamejared.com/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Latvian Maven" />
+      <option name="name" value="Latvian Maven" />
+      <option name="url" value="https://maven.latvian.dev/releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="JitPack" />
+      <option name="name" value="JitPack" />
+      <option name="url" value="https://jitpack.io" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Kotlin for Forge" />
+      <option name="name" value="Kotlin for Forge" />
+      <option name="url" value="https://thedarkcolour.github.io/KotlinForForge/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Squiddev maven cct" />
+      <option name="name" value="Squiddev maven cct" />
+      <option name="url" value="https://maven.squiddev.cc/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Bawnorton's Maven (Mixin^2)" />
+      <option name="name" value="Bawnorton's Maven (Mixin^2)" />
+      <option name="url" value="https://maven.bawnorton.com/releases" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="maven5" />
+      <option name="name" value="maven5" />
+      <option name="url" value="https://maven.enjarai.dev/mirrors" />
+    </remote-repository>
   </component>
 </project>

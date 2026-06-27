@@ -70,5 +70,5 @@ public class ItemInit {
     // ========================================================================
 //    public static final DeferredItem<Item> PRECISION_COMPONENT = ITEMS.register("precision_component", () -> new Item(normal(64)));
 //    public static final DeferredItem<Item> PRECISION_MACHINE = ITEMS.register("precision_machine", () -> new Item(normal(64)));
-    public static final DeferredItem<Item> WARP_CORE = ITEMS.register("warp_core", () -> new Item(normal(16)));
+//    public static final DeferredItem<Item> WARP_CORE = ITEMS.register("warp_core", () -> new Item(normal(16)));
 }
