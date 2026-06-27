@@ -25,20 +25,10 @@ public class ItemInit {
     // ========================================================================
     // NORTHSTAR
     // ========================================================================
-    public static final DeferredItem<Item> COMPRESSED_SAND_BAR = ITEMS.register("compressed_sand_bar", () -> new Item(normal(64)));
+//    public static final DeferredItem<Item> COMPRESSED_SAND_BAR = ITEMS.register("compressed_sand_bar", () -> new Item(normal(64)));
     public static final DeferredItem<Item> HEAT_TILE = ITEMS.register("heat_tile", () -> new Item(normal(64)));
-    public static final DeferredItem<Item> SAND_TILE = ITEMS.register("sand_tile", () -> new Item(normal(64)));
-    public static final DeferredItem<Item> PYROTIDE_SHARD = ITEMS.register("pyrotide_shard", () -> new Item(fireproof(64)));
-    public static final DeferredItem<Item> HYDRONITE_SHARD = ITEMS.register("hydronite_shard", () -> new Item(fireproof(64)));
+//    public static final DeferredItem<Item> SAND_TILE = ITEMS.register("sand_tile", () -> new Item(normal(64)));
 
-    // ========================================================================
-    // OTHER
-    // ========================================================================
-//    public static final DeferredItem<Item> STEEL_STRING = ITEMS.register("steel_string", () -> new Item(normal(64)));
-
-    // ========================================================================
-    // CATACLYSM ITEMS
-    // ========================================================================
     // Witherite (Harbinger)
     public static final DeferredItem<Item> WITHERITE_POWDER = ITEMS.register("witherite_powder", () -> new Item(fireproof(64)));
     public static final DeferredItem<Item> BLACK_NETHERITE_INGOT = ITEMS.register("black_netherite_ingot", () -> new Item(fireproof(64)));
@@ -72,13 +62,13 @@ public class ItemInit {
     public static final DeferredItem<Item> IGNITIUM_PEARL = ITEMS.register("ignitium_pearl", () -> new Item(fireproof(64)));
 
     // Other Bosses
-    public static final DeferredItem<Item> CORAL_PEARL = ITEMS.register("coral_pearl", () -> new Item(fireproof(64)));
-    public static final DeferredItem<Item> FIRE_PEARL = ITEMS.register("fire_pearl", () -> new Item(fireproof(64)));
+    public static final DeferredItem<Item> PYROTIDE_SHARD = ITEMS.register("pyrotide_shard", () -> new Item(fireproof(64)));
+    public static final DeferredItem<Item> HYDRONITE_SHARD = ITEMS.register("hydronite_shard", () -> new Item(fireproof(64)));
 
     // ========================================================================
     // CREATE ITEMS
     // ========================================================================
-    public static final DeferredItem<Item> PRECISION_COMPONENT = ITEMS.register("precision_component", () -> new Item(normal(64)));
-    public static final DeferredItem<Item> PRECISION_MACHINE = ITEMS.register("precision_machine", () -> new Item(normal(64)));
+//    public static final DeferredItem<Item> PRECISION_COMPONENT = ITEMS.register("precision_component", () -> new Item(normal(64)));
+//    public static final DeferredItem<Item> PRECISION_MACHINE = ITEMS.register("precision_machine", () -> new Item(normal(64)));
     public static final DeferredItem<Item> WARP_CORE = ITEMS.register("warp_core", () -> new Item(normal(16)));
 }
