@@ -4,6 +4,7 @@
   "package": "org.lightning323.terranova.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
+    "TotemOfHoldingEntityMixin"
   ],
   "client": [
   ],

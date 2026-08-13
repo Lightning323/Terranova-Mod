@@ -1,11 +1,16 @@
 package org.lightning323.terranova;
 
 import net.minecraft.world.item.Item;
+import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 public class ItemInit {
     public static final DeferredRegister.Items ITEMS = DeferredRegister.createItems(TerraNova.MODID);
+
+    public static void register(IEventBus modEventBus){
+        ItemInit.ITEMS.register(modEventBus);
+    }
 
     // Helpers to quickly generate properties based on stack size and fire status
     private static Item.Properties normal(int stackSize) {

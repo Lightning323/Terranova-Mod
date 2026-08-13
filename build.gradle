@@ -136,7 +136,6 @@ repositories {
     maven {
         url = "https://maven.theillusivec4.top/"
     }
-
     maven {
         name = "Jared's maven"
         url = "https://maven.blamejared.com/"
@@ -202,6 +201,11 @@ dependencies {
     implementation "net.createmod.ponder:ponder-neoforge:${ponder_version}+mc${minecraft_version}"
     compileOnly "dev.engine-room.flywheel:flywheel-neoforge-api-${minecraft_version}:${flywheel_version}"
     implementation "dev.engine-room.flywheel:flywheel-neoforge-${minecraft_version}:${flywheel_version}"
+
+    //Quark
+    implementation "curse.maven:quark-243121:8420966"
+    implementation "curse.maven:zeta-968868:7980010"
+
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar

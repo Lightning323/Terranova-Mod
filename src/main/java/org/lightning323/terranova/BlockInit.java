@@ -12,8 +12,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.function.Supplier;
 
 public class BlockInit {
-    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(TerraNova.MODID);
-    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Registries.ITEM, TerraNova.MODID);
+//    public static final DeferredRegister.Blocks BLOCKS = DeferredRegister.createBlocks(TerraNova.MODID);
+//    public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(Registries.ITEM, TerraNova.MODID);
 
     /* // Example helper to easily uncomment and generate phantom/no-collision blocks
     private static DeferredBlock<Block> registerPhantomBlock(String name, BlockBehaviour.Properties properties) {
