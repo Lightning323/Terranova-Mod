@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "minecraft:netherite_scrap"
+    },
+    "P": {
+      "item": "terranova:ancient_dust"
+    },
+    "S": {
+      "tag": "forge:sandstone"
+    }
+  },
+  "pattern": [
+    " N ",
+    "SPS",
+    " N "
+  ],
+  "result": {
+    "count": 2,
+    "id": "terranova:ancient_pearl"
+  }
+}

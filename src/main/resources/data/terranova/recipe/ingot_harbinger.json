@@ -1,0 +1,20 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "northstar:titanium_ingot"
+    },
+    {
+      "item": "terranova:witherite_powder"
+    },
+    {
+      "item": "create:sturdy_sheet"
+    }
+  ],
+  "results": [
+    {
+      "id": "terranova:black_netherite_ingot"
+    }
+  ],
+  "heat_requirement": "superheated"
+}

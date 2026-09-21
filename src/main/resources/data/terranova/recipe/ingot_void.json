@@ -1,0 +1,26 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "terranova:void_core_dust"
+    },
+    {
+      "item": "minecraft:end_stone"
+    },
+    {
+      "item": "minecraft:end_stone"
+    },
+    {
+      "item": "minecraft:end_stone"
+    }
+  ],
+  "results": [
+    {
+      "id": "terranova:void_ingot"
+    },
+    {
+      "id": "terranova:void_ingot"
+    }
+  ],
+  "heat_requirement": "superheated"
+}

@@ -1,0 +1,20 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "terranova:abyssal_ingot"
+    }
+  ],
+  "processing_time": 600,
+  "results": [
+    {
+      "count": 2,
+      "id": "terranova:abyssal_dust"
+    },
+    {
+      "chance": 0.25,
+      "count": 1,
+      "id": "terranova:abyssal_dust"
+    }
+  ]
+}

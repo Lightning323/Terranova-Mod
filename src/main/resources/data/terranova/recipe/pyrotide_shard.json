@@ -1,0 +1,26 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "minecraft:amethyst_shard"
+    },
+    {
+      "item": "terranova:monstrous_dust"
+    },
+    {
+      "item": "minecraft:sand"
+    }
+  ],
+  "results": [
+    {
+      "id": "terranova:pyrotide_shard"
+    },
+    {
+      "id": "terranova:pyrotide_shard"
+    },
+    {
+      "id": "terranova:pyrotide_shard"
+    }
+  ],
+  "heat_requirement": "superheated"
+}

@@ -1,0 +1,15 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "cataclysm:cursium_ingot"
+    }
+  ],
+  "processing_time": 600,
+  "results": [
+    {
+      "count": 2,
+      "id": "terranova:cursium_dust"
+    }
+  ]
+}

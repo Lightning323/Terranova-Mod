@@ -1,0 +1,20 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "terranova:black_netherite_ingot"
+    }
+  ],
+  "processing_time": 600,
+  "results": [
+    {
+      "count": 2,
+      "id": "terranova:witherite_powder"
+    },
+    {
+      "chance": 0.25,
+      "count": 1,
+      "id": "terranova:witherite_powder"
+    }
+  ]
+}

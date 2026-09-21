@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "terranova:cursium_dust"
+    },
+    "r": {
+      "item": "create_enchantment_industry:super_experience_nugget"
+    }
+  },
+  "pattern": [
+    " r ",
+    "rDr",
+    " r "
+  ],
+  "result": {
+    "count": 4,
+    "id": "terranova:cursium_pearl"
+  }
+}

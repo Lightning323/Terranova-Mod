@@ -1,0 +1,26 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "terranova:abyssal_ingot"
+    },
+    {
+      "item": "northstar:lunar_sapphire_shard"
+    },
+    {
+      "item": "terranova:pyrotide_shard"
+    }
+  ],
+  "results": [
+    {
+      "id": "terranova:hydronite_shard"
+    },
+    {
+      "id": "terranova:hydronite_shard"
+    },
+    {
+      "id": "terranova:hydronite_shard"
+    }
+  ],
+  "heat_requirement": "superheated"
+}

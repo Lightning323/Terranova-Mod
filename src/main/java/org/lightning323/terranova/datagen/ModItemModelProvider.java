@@ -1,6 +1,7 @@
 package org.lightning323.terranova.datagen;
 
 
+import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.data.PackOutput;
 import net.minecraft.world.item.Item;
 import net.neoforged.neoforge.client.model.generators.ItemModelProvider;
@@ -24,6 +25,13 @@ public class ModItemModelProvider extends ItemModelProvider {
      * Expects textures at assets/terranova/textures/item/[item_id].png
      */
     private void generateSimpleItemModel(Item item) {
-        this.basicItem(item);
+        String path = BuiltInRegistries.ITEM.getKey(item).getPath();
+        // Tools/swords render angled in-hand, so use the handheld parent for them.
+        if (item == ItemInit.CREATIVE_SWORD.get()) {
+            this.withExistingParent(path, mcLoc("item/handheld"))
+                    .texture("layer0", modLoc("item/" + path));
+        } else {
+            this.basicItem(item);
+        }
     }
 }

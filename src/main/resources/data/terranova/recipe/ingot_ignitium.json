@@ -1,0 +1,27 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "terranova:ignitium_powder"
+    },
+    {
+      "item": "minecraft:netherite_ingot",
+      "count": 2
+    },
+    {
+      "item": "minecraft:quartz",
+      "count": 3
+    },
+    {
+      "item": "createaddition:electrum_ingot",
+      "count": 3
+    }
+  ],
+  "results": [
+    {
+      "id": "terranova:ignitium_ingot",
+      "count": 2
+    }
+  ],
+  "heat_requirement": "superheated"
+}

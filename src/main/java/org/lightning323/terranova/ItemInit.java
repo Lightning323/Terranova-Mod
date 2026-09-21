@@ -1,6 +1,18 @@
 package org.lightning323.terranova;
 
+import net.minecraft.core.component.DataComponents;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.TagKey;
+import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.SwordItem;
+import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
+import net.minecraft.world.item.component.Unbreakable;
+import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
@@ -24,15 +36,13 @@ public class ItemInit {
     // ========================================================================
     // WORLDEDIT WANDS
     // ========================================================================
-    public static final DeferredItem<Item> WORLDEDIT_WAND = ITEMS.register("worldedit_wand", () -> new Item(normal(1)));
-    public static final DeferredItem<Item> WORLDEDIT_NAV = ITEMS.register("worldedit_nav", () -> new Item(normal(1)));
+//    public static final DeferredItem<Item> WORLDEDIT_WAND = ITEMS.register("worldedit_wand", () -> new Item(normal(1)));
+//    public static final DeferredItem<Item> WORLDEDIT_NAV = ITEMS.register("worldedit_nav", () -> new Item(normal(1)));
 
     // ========================================================================
     // NORTHSTAR
     // ========================================================================
-//    public static final DeferredItem<Item> COMPRESSED_SAND_BAR = ITEMS.register("compressed_sand_bar", () -> new Item(normal(64)));
     public static final DeferredItem<Item> HEAT_TILE = ITEMS.register("heat_tile", () -> new Item(normal(64)));
-//    public static final DeferredItem<Item> SAND_TILE = ITEMS.register("sand_tile", () -> new Item(normal(64)));
 
     // Witherite (Harbinger)
     public static final DeferredItem<Item> WITHERITE_POWDER = ITEMS.register("witherite_powder", () -> new Item(fireproof(64)));
@@ -69,6 +79,60 @@ public class ItemInit {
     // Other Bosses
     public static final DeferredItem<Item> PYROTIDE_SHARD = ITEMS.register("pyrotide_shard", () -> new Item(fireproof(64)));
     public static final DeferredItem<Item> HYDRONITE_SHARD = ITEMS.register("hydronite_shard", () -> new Item(fireproof(64)));
+
+    // ========================================================================
+    // CREATIVE SWORD
+    // ========================================================================
+    // Not added to any creative tab - obtainable via /give terranova:creative_sword
+    public static final DeferredItem<Item> CREATIVE_SWORD = ITEMS.register("creative_sword", () -> new SwordItem(
+            CreativeTier.INSTANCE,
+            new Item.Properties()
+                    .stacksTo(1)
+                    .fireResistant()
+                    .attributes(ItemAttributeModifiers.builder()
+                            .add(Attributes.ATTACK_DAMAGE,
+                                    new AttributeModifier(Item.BASE_ATTACK_DAMAGE_ID, 999999999999.0, AttributeModifier.Operation.ADD_VALUE),
+                                    EquipmentSlotGroup.MAINHAND)
+                            .add(Attributes.ATTACK_SPEED,
+                                    new AttributeModifier(Item.BASE_ATTACK_SPEED_ID, -2.4D, AttributeModifier.Operation.ADD_VALUE),
+                                    EquipmentSlotGroup.MAINHAND)
+                            .build())
+                    .component(DataComponents.UNBREAKABLE, new Unbreakable(false))
+    ));
+
+    private enum CreativeTier implements Tier {
+        INSTANCE;
+
+        @Override
+        public int getUses() {
+            return 2031;
+        }
+
+        @Override
+        public float getSpeed() {
+            return 999.0F;
+        }
+
+        @Override
+        public float getAttackDamageBonus() {
+            return 0.0F;
+        }
+
+        @Override
+        public TagKey<Block> getIncorrectBlocksForDrops() {
+            return BlockTags.INCORRECT_FOR_NETHERITE_TOOL;
+        }
+
+        @Override
+        public int getEnchantmentValue() {
+            return 22;
+        }
+
+        @Override
+        public Ingredient getRepairIngredient() {
+            return Ingredient.EMPTY;
+        }
+    }
 
     // ========================================================================
     // CREATE ITEMS

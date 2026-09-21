@@ -1,0 +1,20 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "cataclysm:ancient_metal_ingot"
+    }
+  ],
+  "processing_time": 600,
+  "results": [
+    {
+      "count": 2,
+      "id": "terranova:ancient_dust"
+    },
+    {
+      "chance": 0.25,
+      "count": 1,
+      "id": "terranova:ancient_dust"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "N": {
+      "item": "terranova:hydronite_shard"
+    },
+    "P": {
+      "item": "terranova:ignitium_ingot"
+    }
+  },
+  "pattern": [
+    " P ",
+    "PNP",
+    " P "
+  ],
+  "result": {
+    "count": 2,
+    "id": "terranova:ignitium_pearl"
+  }
+}

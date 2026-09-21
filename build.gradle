@@ -196,6 +196,15 @@ dependencies {
     runtimeOnly "curse.maven:waystones-245755:8163145"
     implementation "curse.maven:balm-531761:8252588"
 
+    //L_Ender's Cataclysm (requires Curios API and Lionfish API)
+    runtimeOnly "curse.maven:lendercataclysm-551586:8706841"
+    runtimeOnly "curse.maven:curios-309927:6529130"
+    runtimeOnly "curse.maven:lionfish-api-1001614:8345326"
+
+    //Mowzie's Mobs (requires GeckoLib)
+    runtimeOnly "curse.maven:mowzies-mobs-250498:7760267"
+    runtimeOnly "curse.maven:geckolib-388172:8350073"
+
     implementation("com.simibubi.create:create-${minecraft_version}:${create_version}:slim") { transitive = false }
     implementation("com.tterrag.registrate:Registrate:${registrate_version}")
     implementation "net.createmod.ponder:ponder-neoforge:${ponder_version}+mc${minecraft_version}"

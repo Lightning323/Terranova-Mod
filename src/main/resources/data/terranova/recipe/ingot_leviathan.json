@@ -1,0 +1,33 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "terranova:abyssal_dust"
+    },
+    {
+      "item": "minecraft:tube_coral"
+    },
+    {
+      "item": "minecraft:bubble_coral"
+    },
+    {
+      "item": "minecraft:brain_coral"
+    },
+    {
+      "item": "minecraft:horn_coral"
+    },
+    {
+      "item": "minecraft:prismarine_shard",
+      "count": 2
+    }
+  ],
+  "results": [
+    {
+      "id": "terranova:abyssal_ingot"
+    },
+    {
+      "id": "terranova:abyssal_ingot"
+    }
+  ],
+  "heat_requirement": "superheated"
+}

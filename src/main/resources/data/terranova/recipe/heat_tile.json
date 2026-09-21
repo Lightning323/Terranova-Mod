@@ -1,0 +1,23 @@
+{
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "terranova:monstrous_dust"
+    },
+    {
+      "item": "createbigcannons:cast_iron_ingot"
+    },
+    {
+      "item": "minecraft:blaze_powder"
+    }
+  ],
+  "results": [
+    {
+      "id": "terranova:heat_tile"
+    },
+    {
+      "id": "terranova:heat_tile"
+    }
+  ],
+  "heat_requirement": "superheated"
+}
