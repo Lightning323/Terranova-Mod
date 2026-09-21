@@ -3,10 +3,14 @@ package org.lightning323.terranova;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.tags.TagKey;
+import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.entity.EquipmentSlotGroup;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.AttributeModifier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.SwordItem;
 import net.minecraft.world.item.Tier;
 import net.minecraft.world.item.crafting.Ingredient;
@@ -14,6 +18,7 @@ import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.component.Unbreakable;
 import net.minecraft.world.level.block.Block;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.event.entity.player.AttackEntityEvent;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -99,6 +104,27 @@ public class ItemInit {
                             .build())
                     .component(DataComponents.UNBREAKABLE, new Unbreakable(false))
     ));
+
+    public static void onPlayerAttack(AttackEntityEvent event) {
+        Player player = event.getEntity();
+        if (player.level().isClientSide || !player.getMainHandItem().is(ItemInit.CREATIVE_SWORD.get())) {
+            return;
+        }
+
+        if (!(event.getTarget() instanceof LivingEntity target)) {
+            return;
+        }
+
+        event.setCanceled(true);
+        target.setLastHurtByPlayer(player);
+        target.setLastHurtByMob(player);
+        DamageSource source = player.damageSources().playerAttack(player);
+        target.hurt(source, Float.MAX_VALUE);
+        if (!target.isDeadOrDying() && !target.isRemoved()) {
+            target.setHealth(0.0F);
+            target.die(source);
+        }
+    }
 
     private enum CreativeTier implements Tier {
         INSTANCE;

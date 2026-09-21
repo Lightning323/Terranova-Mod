@@ -6,6 +6,7 @@ import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.ItemStack;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
+import net.neoforged.neoforge.common.NeoForge;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
@@ -15,5 +16,6 @@ public class TerraNova {
 
     public TerraNova(IEventBus modEventBus) {
         ItemInit.register(modEventBus);
+        NeoForge.EVENT_BUS.addListener(ItemInit::onPlayerAttack);
     }
 }
