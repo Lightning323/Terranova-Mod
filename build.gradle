@@ -196,6 +196,9 @@ dependencies {
     runtimeOnly "curse.maven:waystones-245755:8163145"
     implementation "curse.maven:balm-531761:8252588"
 
+    //Astral Armoury
+    runtimeOnly "maven.modrinth:astral-armoury:0.2.0"
+
     //L_Ender's Cataclysm (requires Curios API and Lionfish API)
     runtimeOnly "curse.maven:lendercataclysm-551586:8706841"
     runtimeOnly "curse.maven:curios-309927:6529130"

@@ -64,7 +64,6 @@ public class ItemInit {
 
     // Monstrous (Nether golem)
     public static final DeferredItem<Item> MONSTROUS_DUST = ITEMS.register("monstrous_dust", () -> new Item(fireproof(64)));
-    public static final DeferredItem<Item> MONSTROUS_PEARL = ITEMS.register("monstrous_pearl", () -> new Item(fireproof(64)));
 //    public static final DeferredItem<Item> MONSTROUS_INGOT = ITEMS.register("monstrous_ingot", () -> new Item(fireproof(64)));
 
     // Ancient Remnant
