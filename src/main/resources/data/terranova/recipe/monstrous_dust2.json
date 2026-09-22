@@ -8,11 +8,7 @@
   "processing_time": 600,
   "results": [
     {
-      "count": 2,
-      "id": "terranova:monstrous_dust"
-    },
-    {
-      "chance": 0.25,
+      "chance": 0.5,
       "count": 1,
       "id": "terranova:monstrous_dust"
     }
